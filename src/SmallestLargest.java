@@ -13,6 +13,10 @@ public class SmallestLargest {
         System.out.println("Input the 3rd number: ");
         int num3 = in.nextInt();
 
+        if (num1 == num2 || num1 == num3 || num2 == num3) {
+            System.out.println("Please rerun the program and enter 3 different numbers");
+        }
+
         if (num1 > num2) {
             if (num1 > num3) {
                 System.out.println("The greatest: " + num1);
